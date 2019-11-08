@@ -42,8 +42,8 @@ export function execCmd(
     )
 
     if (pipeOutput) {
-      execProcess.stdout.pipe(process.stdout)
-      execProcess.stderr.pipe(process.stderr)
+      execProcess.stdout!.pipe(process.stdout)
+      execProcess.stderr!.pipe(process.stderr)
     }
   })
 }
